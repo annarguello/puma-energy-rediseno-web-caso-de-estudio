@@ -113,7 +113,6 @@ Nosotros, Promociones, Puma Flota, Cleantec, Contacto, y las páginas legales de
 
 ## 6. Pensado para mantenerse
 
-- **Sitio estático:** sin backend, sin base de datos y sin variables de entorno. Se compila a HTML, CSS y JS.
 - **Tokens centralizados:** cambiar un valor en un archivo lo cambia en todo el sitio.
 - **Contenido separado del marcado:** agregar un combustible o un lubricante es sumar un archivo JSON y una imagen.
 - **Verificaciones con un solo comando:** chequeo de tipos, ESLint, 120 pruebas y build.
