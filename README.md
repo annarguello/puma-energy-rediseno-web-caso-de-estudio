@@ -75,6 +75,10 @@ El **explorador** reemplaza las fichas en imagen. A la izquierda se elige el com
 
 [![Explorador de combustibles](img/explorador-escritorio.png)](img/explorador-escritorio.png)
 
+En celular las opciones pasan a una fila de pestañas que se desliza, y la ficha ocupa el ancho completo.
+
+<img src="img/combustibles-movil.png" width="260" alt="Explorador de combustibles en celular">
+
 En la home los mismos productos se muestran como barras de color con acceso directo a la ficha.
 
 [![Combustibles en la home](img/combustibles-home-escritorio.png)](img/combustibles-home-escritorio.png)
@@ -125,7 +129,6 @@ Un sitio se valida con quienes lo usan. Esto todavía no está hecho:
 
 - **No hubo pruebas de uso.** Las decisiones se apoyan en la auditoría y en criterios de accesibilidad, no en observar a conductores o responsables de flota.
 - **Sin medición de rendimiento.** No hay mediciones de Lighthouse ni de Core Web Vitals en este caso, y falta una revisión con lector de pantalla.
-- **Desborde horizontal en celular.** Al revisar el sitio publicado para este caso, la página de combustibles en 390 px de ancho se desborda hasta unos 640 px por el listado de pestañas del explorador. Es un error de maquetación pendiente de corregir.
 - **Promociones con contenido de ejemplo.** La sección de promociones de la home todavía muestra piezas de otro mercado. Hay que reemplazarlas por las promociones vigentes en Paraguay.
 - **Desviación de la dirección de arte.** La regla era blanco dominante, pero los héroes con video y la banda de Cleantec van sobre fondo oscuro. Hay que decidir con la marca si se mantiene.
 - **Estaciones, promociones y blog desde el CMS.** Hoy las estaciones salen de un JSON. La conexión con la API del otro equipo está planteada pero no implementada.
@@ -136,7 +139,7 @@ Un sitio se valida con quienes lo usan. Esto todavía no está hecho:
 - Auditar antes de diseñar ordena el trabajo: casi todas las decisiones salieron de un problema concreto del sitio anterior.
 - Pasar el contenido de imagen a datos no es un detalle técnico. Es lo que vuelve el sitio accesible, indexable y actualizable.
 - Una referencia sirve para aprender de ritmo y jerarquía, no para copiar estructura. Descartar lo que choca con la marca es parte de usarla bien.
-- Mirar lo publicado con ojos de revisor encuentra lo que el desarrollo no ve. El desborde en celular lo detecté recién al preparar este caso.
+- Mirar lo publicado con ojos de revisor encuentra lo que el desarrollo no ve. Al preparar este caso encontré un desborde horizontal en celular en la página de combustibles. La causa era una columna de grilla sin ancho definido. Quedó corregido con dos clases, y lo medí en el sitio publicado.
 
 ---
 
